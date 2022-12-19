@@ -5,6 +5,7 @@
 <section class="cards py-5">
 
     <div class="container">
+        <h1 class="text-uppercase mb-4">movie cards:</h1>
         <div class="row row-cols-2 row-cols-md-4 g-4">
             @forelse($movies as $movie)
             <div class="col">
@@ -21,7 +22,7 @@
                 </div>
             </div>
             @empty
-
+            <p>Ops! no movies available!</p>
             @endforelse
         </div>
     </div>
