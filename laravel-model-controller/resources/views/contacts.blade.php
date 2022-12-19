@@ -3,5 +3,5 @@
 @section('content')
 
 
-<h1>welcome</h1>
+<h1>contacts</h1>
 @endsection
