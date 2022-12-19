@@ -18,8 +18,15 @@ class PageController extends Controller
     {
         return view('about');
     }
+
     public function contacts()
     {
         return view('contacts');
+    }
+
+    public function details()
+    {
+        $movie_details = Movie::find(1);
+        return view('details', compact('movie_details'));
     }
 }

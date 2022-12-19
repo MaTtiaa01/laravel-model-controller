@@ -18,6 +18,7 @@
                     <div class="card-body">
                         <div class="vote">Vote: {{$movie->vote}}</div>
                         <div class="nationality">Nationality: {{$movie->nationality}}</div>
+                        <a class="mt-3 btn btn-secondary" href="{{route('details')}}">More Details </a>
                     </div>
                 </div>
             </div>
