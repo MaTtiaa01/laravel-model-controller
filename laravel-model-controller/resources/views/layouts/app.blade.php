@@ -16,28 +16,14 @@
 </head>
 
 <body>
-    <header>
-        <ul class="nav justify-content-center bg-dark">
-            <li class="nav-item">
-                <a class="nav-link {{Route::currentRouteName() === 'home' ? 'active' : ''}}" href="{{route('home')}}">home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link {{Route::currentRouteName() === 'about' ? 'active' : ''}}" href="{{route('about')}}">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link {{Route::currentRouteName() === 'contacts' ? 'active' : ''}}" href="{{route('contacts')}}">Contacts</a>
-            </li>
-        </ul>
-    </header>
+    @include('partials.header')
 
     <main>
         @yield('content')
 
     </main>
 
-    <footer>
-
-    </footer>
+    @include('partials.footer')
 </body>
 
 </html>
